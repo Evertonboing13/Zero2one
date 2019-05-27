@@ -1,0 +1,22 @@
+<script>
+    const url = 'https://api.conexaonfe.com.br/v1/produtos';
+    fetch(url,{
+        method:'GET',
+        headers:{
+            'Authorization':'aaa',
+            'Content-Type' : 'application/json'
+
+
+        }
+    })
+   .then(response=>{
+       return response.json();
+   })
+   .then(res=>{
+       return response.json(res)
+   }) 
+   .catch(error=>{
+        console.log(error)
+
+   })
+
