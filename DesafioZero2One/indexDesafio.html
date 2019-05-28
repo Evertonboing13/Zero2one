@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Listagem de produtos</title>
+    <link href="./estilos2.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" language="javascript" src="funcoes.js"></script>
+</head>
+
+<body onload="ListaProdutos()">
+
+    <header>
+        <H1 align="Center">Listagem de produtos</H1>
+    </header>
+
+    <div>
+        <form action="ServidorTeste.php" method="Post" class="cabec">
+             <H3 align="left">Lista</H3>
+            </br>
+            <input type="hidden" name="codigo" id="codigo_0" placeholder="codigo">
+            <input type="text" name="nome" id="nome_0" value="Produto1" placeholder="Nome">
+            </br>
+            </br>
+            <input type="number" class="valor" name="valor_0" id="valor_0" placeholder="quantidade">
+            </br>
+            <input type="hidden" name="codigo2" id="codigo_1" placeholder="codigo">
+            <input type="text" name="nome2" id="nome_1" value="Produto2" placeholder="Nome">
+            </br>
+            </br>
+            <input type="number" class="valor" name="valor_1" id="valor_1" placeholder="quantidade">
+            </br>
+            <input type="hidden" name="codigo3" id="codigo_2" placeholder="codigo">
+            <input type="text" name="nome3" id="nome_2" value="Produto3" placeholder="Nome">
+            </br>
+            </br>
+            <input type="number" class="valor" name="valor_3" id="valor_2" placeholder="quantidade">
+            </br>
+            <button id="incluioraltera" type="button" class="adc" onclick="alteraProdutos()">Alterar pedido !</button>
+            </br>
+        </form>
+    </div>
+
+    <div id="divItens">
+        <!--
+        <div class="item" id="itens">
+
+            <div id='Contador'>
+                <h3>item: 1</h3>
+            </div>
+
+            <div id="produtos">
+                <h3>Produto: PRODUTO TESTE 1</h3>
+            </div>
+
+            <div id="valor">
+                <h3> R$10.00</h3>
+            </div>
+
+            <div id='descri'>
+                <h3> Descrição:Teste produto 1 </h3>
+            </div>
+
+
+            <img src="https://www.empreendaecommerce.com.br/wp-content/uploads/2018/07/prodBlog-696x479.png" alt="Smiley face" class="imgitem">
+        </div>
+        -->
+
+    </div>
+
+
+</body>
+
+</html>
