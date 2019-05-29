@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="Funções.js"></script>
+
+</head>
+
+<body onload="ListaProdutos()">
+
+    <h2>Lista de itens </h2>
+    <div class="container" id="Cadastro produtos">
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-4 col-md-offset-4" align="left">
+                        <label for="nomeProduto">Nome do Produtot</label>
+                        <input type="text" class="form-control" id="nomeProduto" placeholder="Nome do produto">
+                    </div>
+                    <div class="col-md-4 col-md-offset-4" align="left">
+                        <label for="Valorproduto">Valor do produto</label>
+                        <input type="text" class="form-control" id="Valorproduto" placeholder="Valor do produto">
+                    </div>
+
+                    <div class="col-md-4 col-md-offset-4" align="left">
+                        <label for="quantidade">Quantidade produto</label>
+                        <input type="text" class="form-control" id="quantidade" placeholder="Quantidade">
+                    </div>
+                    
+                    <div class="col-sm-12">
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                    </div>
+                    <div  class='col-md-4 col-md-offset-5' align="left">
+                        <button type="button" class="btn btn-success btn-lg" onclick="Adicionaitem()">Adicionar</button>
+                    </div>
+                </div>
+              
+            </div>
+
+        </div>
+        <!--<div class='col-md-offset-11' align="left">
+            <button type="button" align="left" class="btn btn-primary btn-lg">Adicionar</button>
+        </div> -->
+        <table class="table table-hover" id="tabela1">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                    <th>Alterar</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody  id="tbody1">
+                <tr>
+                    <td>1</td>
+                    <td>teste1</td>
+                    <td>4</td>
+                    <td>50</td>
+                    <td> <button type="button" class="btn btn-success">Alterar</button></td>
+                    <td><button type="button" class="btn btn-danger">Excluir</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
